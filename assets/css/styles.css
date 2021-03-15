@@ -184,6 +184,11 @@ img{
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
+.nav__logo{
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+
+}
 
 .nav__logo:hover{
   color: var(--first-color);
@@ -337,22 +342,25 @@ img{
 .menu__content{
   position: relative;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: var(--container-color);
   border-radius: .5rem;
   box-shadow: 0 2px 4px rgba(3,74,40,.15);
   padding: .75rem;
+  height: 20rem;
 }
 
 .menu__img{
   width: 100px;
   align-self: center;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 
 .menu__name, .menu__preci{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
+  text-align: center;
 }
 
 .menu__name{
@@ -365,15 +373,15 @@ img{
 
 .menu__detail{
   margin-bottom: var(--mb-1);
+  text-align: center;
 }
 
 .menu__button{
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1.5rem;
   display: flex;
-  padding: .625rem .813rem;
-  border-radius: .5rem 0 .5rem 0;
+  padding: .625rem 1.5rem;
+  border-radius: .5rem;
 }
 
 /*========== APP ==========*/
@@ -482,6 +490,9 @@ img{
   .contact__button{
     justify-self: center;
   }
+  .menu__content{
+    height: 18rem;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -559,4 +570,9 @@ img{
     .home__container {
         height: 640px;
     }
+}
+@media screen and (min-width: 360px) {
+  .menu__content{
+    height: 18rem;
+  }
 }
